@@ -19,7 +19,7 @@
           <router-link aria-current="page" class="nav-link active" to="/galeria">Galeria</router-link>
         </li>
         <li class="nav-item start-100 ps-5">
-          <router-link aria-current="page" class="nav-link active" to="/RequerimientoCliente">RequerimientoCliente</router-link>
+          <router-link aria-current="page" class="nav-link active" to="/Clasificados">Clasificados</router-link>
         </li>
         <li class="nav-item start-100 ps-5">
           <router-link aria-current="page" class="nav-link active" to="/contactanos">Contactanos</router-link>
