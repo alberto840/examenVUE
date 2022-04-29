@@ -1,6 +1,6 @@
 <template>
         <!--Titulares-->
-        <div class="child" style="width: 100%;"><h1 class="titular">Los destacados:</h1></div>
+        <div class="child p-3" style="width: 100%; background-color: #0000; border-style: solid; border-width: medium; border-color: black;"><h1 class="titular">Los destacados:</h1></div>
 
         <!--Bloque1-->
         <div class="child" style="width: 33%">
@@ -44,6 +44,7 @@
   vertical-align: middle;
   color: black;
   font-family: 'Times New Roman', Times, serif;
+  background-color: aliceblue;
 }
 
 .titular{

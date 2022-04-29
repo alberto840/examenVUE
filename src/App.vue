@@ -5,23 +5,24 @@
 </script>
 
 <template>
-  <div id="app" style="margin: 0%; padding: 0%;" class="d-flex flex-column">
+  <div id="app" style="margin: 0%; padding: 0%; background-color: #ffff;" class="d-flex flex-column">
 
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container-fluid">
-    <router-link to="/">Home</router-link>
+    <img src="https://conceptodefinicion.de/wp-content/uploads/2019/06/letras-12.jpg" style="width: 60px;">
+    <router-link class="nombreEmpresa" to="/">a Paz  Home</router-link>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0 ps-5">
-        <li class="nav-item start-100 ps-5">
+      <ul class="start-50 navbar-nav me-auto mb-2 mb-lg-0 ps-5">
+        <li class="nav-item ps-5">
           <router-link aria-current="page" class="nav-link active" to="/galeria">Galeria</router-link>
         </li>
-        <li class="nav-item start-100 ps-5">
+        <li class="nav-item ps-5">
           <router-link aria-current="page" class="nav-link active" to="/Clasificados">Clasificados</router-link>
         </li>
-        <li class="nav-item start-100 ps-5">
+        <li class="nav-item ps-5">
           <router-link aria-current="page" class="nav-link active" to="/contactanos">Contactanos</router-link>
         </li>
       </ul>
@@ -38,7 +39,6 @@
 @import './assets/base.css';
 
 #app {
-  max-width: 1280px;
   margin: 0 auto;
   padding: 0rem;
 
@@ -60,6 +60,12 @@ a,
   color: hsla(160, 100%, 37%, 1);
   transition: 0.4s;
 }
+.nombreEmpresa {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 150%;
+  text-decoration-line: underline;
+  text-decoration-color: #ffff;
+}
 
 @media (hover: hover) {
   a:hover {
@@ -69,6 +75,7 @@ a,
 
 @media (min-width: 1024px) {
   body {
+    background-color: #ffff;
     display:block;
     place-items:center;
   }

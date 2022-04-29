@@ -4,6 +4,9 @@
     font-size: 27px;
     padding: 10px;
 }
+.body {
+    background-color: #ffff;
+}
 
 .bigicon {
     font-size: 35px;
@@ -17,7 +20,7 @@
             <div class="well well-sm">
                 <form class="form-horizontal" method="post">
                     <fieldset>
-                        <center><legend class="text-center header" style="color:white;">CONTACTANOS</legend></center>
+                        <center><legend class="text-center header" style="color:black;">CONTACTANOS</legend></center>
 
                         <div class="form-group" style="margin:1vw;">
                             <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-user bigicon"></i></span>
@@ -54,8 +57,8 @@
                         </div>
 
                         <div class="form-group">
-                            <div class="col-md-12 text-center">
-                                <button id="enviar" class="btn btn-primary btn-lg" style="background-color: #C44D58;" disabled>Enviar</button>
+                            <div class="col">
+                                <button onclick="myFunction()" class="btn" style="background-color: #ff370f; color: white;" name="crear" disable>Registrar</button>
                             </div>
                         </div>
                     </fieldset>
@@ -64,7 +67,7 @@
         </div>
 </div>
 </center>
-        <div class="child position-absolute end-50" style="background-color:#4ECDC4">
+        <div class="container" style="background-color:#4ECDC4; width: 100%; padding:2vw;">
             <center>
               <h1>Telf: 214124124</h1>
             <h1>Telf: 234525526</h1>
@@ -72,14 +75,14 @@
             <h1>nombre de encargado: Ignacion Muñoz Quispe</h1>
             </center>
         </div>
-        <div class="child position-absolute start-50 " style="background-color:#FF6B6B">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d30172.927342492836!2d-65.25918076931153!3d-19.036639000000005!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x93fbc8cef38e6c77%3A0xb405926e8bb6321a!2sMercado%20Campesino%20Sucre!5e0!3m2!1ses!2sbo!4v1651118556860!5m2!1ses!2sbo" width="600" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="container" style="background-color:#FF6B6B; width: 100%; padding:2vw; ">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d30172.927342492836!2d-65.25918076931153!3d-19.036639000000005!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x93fbc8cef38e6c77%3A0xb405926e8bb6321a!2sMercado%20Campesino%20Sucre!5e0!3m2!1ses!2sbo!4v1651118556860!5m2!1ses!2sbo" width="1080" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
 </template>
 <script type="text/javascript">
-function enviar(){
-    alert("Se envio el formulario correctamente. Pronto estaremos en contacto contigo");
-  }
+function myFunction() {
+      alert("¡La cita fue registrada, te estaremos esperando");
+    }
 export default {
     data() {
       return {
