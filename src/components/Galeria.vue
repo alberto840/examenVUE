@@ -1,90 +1,105 @@
-<template>
-    <div class="parent">
-        <div  class="child position-absolute end-50">
-            <div id="myCarousel" class="carousel slide" data-ride="carousel">
-  <!-- Indicators -->
-  <ol class="carousel-indicators">
-    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-    <li data-target="#myCarousel" data-slide-to="1"></li>
-    <li data-target="#myCarousel" data-slide-to="2"></li>
-  </ol>
-
-  <!-- Wrapper for slides -->
-  <div class="carousel-inner">
-    <div class="item active">
-      <img src="https://mott.pe/noticias/wp-content/uploads/2018/03/10-trucos-para-saber-c%C3%B3mo-tomar-fotos-profesionales-con-el-celular-portada-1280x720.jpg" alt="Chisca" style="width: 600px;">
-    </div>
-
-    <div class="item">
-      <img src="https://images.theconversation.com/files/254114/original/file-20190116-163292-1fq0u27.jpg?ixlib=rb-1.1.0&rect=2%2C0%2C1914%2C1514&q=20&auto=format&w=320&fit=clip&dpr=2&usm=12&cs=strip" alt="Chica" style="width: 600px;">
-    </div>
-
-    <div class="item">
-      <img src="https://empresas.blogthinkbig.com/wp-content/uploads/2019/11/Fotos-portada-e1467633503131.jpg" alt="New Yo" style="width: 600px;">
-    </div>
-  </div>
-
-  <!-- Left and right controls -->
-  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-    <span class="glyphicon glyphicon-chevron-left"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="right carousel-control" href="#myCarousel" data-slide="next">
-    <span class="glyphicon glyphicon-chevron-right"></span>
-    <span class="sr-only">Next</span>
-  </a>
-            </div>
-        </div>
-        <div  class="child position-absolute start-50">
-            <div id="myCarousel" class="carousel slide" data-ride="carousel">
-  <!-- Indicators -->
-  <ol class="carousel-indicators">
-    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-    <li data-target="#myCarousel" data-slide-to="1"></li>
-    <li data-target="#myCarousel" data-slide-to="2"></li>
-  </ol>
-
-  <!-- Wrapper for slides -->
-  <div class="carousel-inner">
-    <div class="item active">
-      <img src="https://imborrable.com/wp-content/uploads/2021/04/fotos-gratis-de-stock-1.jpg" alt="Los Angeles" style="width: 600px;">
-    </div>
-
-    <div class="item">
-      <img src="https://img.freepik.com/foto-gratis/disparo-gran-angular-solo-arbol-que-crece-cielo-nublado-puesta-sol-rodeada-cesped_181624-22807.jpg?w=2000" alt="Chicago" style="width: 600px;">
-    </div>
-
-    <div class="item">
-      <img src="https://productoraudiovisualbarcelona.com/wp-content/uploads/2018/02/fotografia-eventos-exposiciones-785x510.jpg" alt="New York" style="width: 600px;">
-    </div>
-  </div>
-
-  <!-- Left and right controls -->
-  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-    <span class="glyphicon glyphicon-chevron-left"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="right carousel-control" href="#myCarousel" data-slide="next">
-    <span class="glyphicon glyphicon-chevron-right"></span>
-    <span class="sr-only">Next</span>
-  </a>
-            </div>
-        </div>
-    </div>
-</template>
-
 <style>
-.parent {
-  border: 1px solid black;
-  margin: 1rem;
-  padding: 2rem 2rem;
-  text-align: center;
-  color: azure;
+.header {
+    color: #36A0FF;
+    font-size: 27px;
+    padding: 10px;
 }
-.child {
-  display: inline-block;
-  border: 1px solid #0000;
-  padding: 1rem 1rem;
-  vertical-align: middle;
+
+.bigicon {
+    font-size: 35px;
+    color: #36A0FF;
 }
 </style>
+<template>
+<center>
+  <div class="container" style="width:200vw; background-color:#4ECDC4; padding:2vw;">
+        <div class="col-md-20">
+            <div class="well well-sm">
+                <form class="form-horizontal" method="post">
+                    <fieldset>
+                      <div class=card style="width: 600px">
+
+                        <center><legend class="text-center header" style="color:#4ECDC4;">PUBLICITE SU EMPRESA:</legend></center>
+
+                        <div class="form-group" style="margin:1vw;">
+                            <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-user bigicon"></i></span>
+                            <div class="col-md-8">
+                                <input id="fname" name="name" type="text" placeholder="NOMBRE DE LA EMPRESA" class="form-control">
+                            </div>
+                        </div>
+                        <div class="form-group" style="margin:1vw;">
+                            <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-user bigicon"></i></span>
+                            <div class="col-md-8">
+                                <input id="lname" name="name" type="text" placeholder="TIPO DE PRUDUCTO" class="form-control">
+                            </div>
+                        </div>
+
+                        <div class="form-group" style="margin:1vw;">
+                            <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-envelope-o bigicon"></i></span>
+                            <div class="col-md-8">
+                                <input id="email" name="email" type="text" placeholder="DEPARTAMENTO" class="form-control">
+                            </div>
+                        </div>
+
+                        <div class="form-group" style="margin:1vw;">
+                            <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-phone-square bigicon"></i></span>
+                            <div class="col-md-8">
+                                <input id="phone" name="phone" type="text" placeholder="TELF CONTACTO" class="form-control">
+                            </div>
+                        </div>
+
+                        <div class="form-group" style="margin:2vw;">
+                            <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-pencil-square-o bigicon"></i></span>
+                            <div class="col-md-8">
+                                <textarea class="form-control" id="message" name="message" placeholder="Ingresa su anuncio en este espacio." rows="7"></textarea>
+                            </div>
+                        </div>
+                        <div class="form-group" style="margin:2vw;">
+                        <label for="start">Fecha de inicio:</label>
+
+                          <input type="date" id="start" name="trip-start"
+                            value="2022-04-29">
+                        </div>
+                        <div class="form-group" style="margin:2vw;">
+                        <label for="start">Fecha de fin:</label>
+
+                          <input type="date" id="start" name="trip-start"
+                            value="2022-04-29">
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-12 text-center">
+                                <button id="enviar" class="btn btn-primary btn-lg" style="background-color: #C44D58;" disabled>Enviar</button>
+                            </div>
+                        </div>
+                      </div>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+</div>
+</center>
+</template>
+<script type="text/javascript">
+function enviar(){
+    alert("Se envio el formulario correctamente. Pronto estaremos en contacto contigo");
+  }
+export default {
+    data() {
+      return {
+        types: [
+          'text',
+          'number',
+          'email',
+          'password',
+          'search',
+          'url',
+          'tel',
+          'date',
+          'time',
+          'range',
+          'color'
+        ]
+      }
+    }
+  };
+</script>
