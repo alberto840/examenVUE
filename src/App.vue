@@ -5,40 +5,39 @@
 </script>
 
 <template>
-  <div id="app" style="margin: 0%; padding: 0%;" class="d-flex flex-column">
-
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <nav style ="background-color: #556270;" class="navbar navbar-expand-lg navbar-light">
   <div class="container-fluid">
-    <router-link to="/">Home</router-link>
+    <img src="http://www.ejemplode.com/images/uploads/letras/letra-l.jpg?1490107644727" style="width: 30px;">
+    <router-link style="  font-size: 120%; font: bold; font-family: Helvetica;" to="/">a Paz | Home</router-link>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0 ps-5">
-        <li class="nav-item start-100 ps-5">
-          <router-link aria-current="page" class="nav-link active" to="/galeria">Galeria</router-link>
+      <ul class="start-50 navbar-nav me-auto mb-2 mb-lg-0 ps-5">
+        <li class="nav-item start-50 ps-1">
+          <router-link style="color: #ffff" aria-current="page" class="nav-link active" to="/galeria">Galeria</router-link>
         </li>
-        <li class="nav-item start-100 ps-5">
-          <router-link aria-current="page" class="nav-link active" to="/RequerimientoCliente">RequerimientoCliente</router-link>
+        <li class="nav-item start-50 ps-1">
+          <router-link style="color: #ffff" aria-current="page" class="nav-link active" to="/RequerimientoCliente">RequerimientoCliente</router-link>
         </li>
-        <li class="nav-item start-100 ps-5">
-          <router-link aria-current="page" class="nav-link active" to="/contactanos">Contactanos</router-link>
+        <li class="nav-item start-50 ps-1">
+          <router-link style="color: #ffff" aria-current="page" class="nav-link active" to="/contactanos">Contactanos</router-link>
         </li>
       </ul>
     </div>
   </div>
   </nav>
+
     <main>
       <router-view></router-view>
     </main>
-  </div>
+    
 </template>
 
 <style>
 @import './assets/base.css';
 
 #app {
-  max-width: 1280px;
   margin: 0 auto;
   padding: 0rem;
 
@@ -57,13 +56,14 @@ header {
 a,
 .green {
   text-decoration: none;
-  color: hsla(160, 100%, 37%, 1);
+  color: rgba(0, 189, 126, 0.795);
   transition: 0.4s;
 }
 
 @media (hover: hover) {
   a:hover {
-    background-color: hsla(160, 100%, 37%, 0.2);
+    color: aliceblue;
+    background-color: hsla(155, 32%, 38%, 0.493);
   }
 }
 
@@ -71,6 +71,7 @@ a,
   body {
     display:block;
     place-items:center;
+    background-color: #ffff;
   }
 
   #app {
